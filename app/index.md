@@ -3,7 +3,7 @@ title: Protect Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: Protect Broadband Privacy
 shareimage: https://www.domain.com/images/share-en.png
-description: Join us and take action! Send a message to the FCC to tell them you have a right to choose how your data is used. 
+description: Join us and take action! Send a message to the FCC to tell them you have a right to choose how your data is used.
 action_comment_include: letter-en.md
 action_text: Send a comment now &raquo;
 intro_headline: YOUR PERSONAL INFO. YOUR CHOICE.
@@ -18,8 +18,8 @@ tags:
   - eu
   - net-neutrality
 mothership_tag: eu-nn
-allow_comments: true 
-petition_id: 'XX' 
+include_comments: true
+petition_id: 'XX'
 action_network_url: 'https://actionnetwork.org/petitions/XX'
 ---
 
@@ -56,7 +56,6 @@ _Ask your friends to join now before it's too late!_
 
 [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.domain.com){: .share}
 [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.domain.com){: .tweet}
-
 [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
 
 
@@ -65,6 +64,6 @@ _Ask your friends to join now before it's too late!_
 Built by ![](images/fftf-footer-logo.png)
 
 : **Press:** [press@fightforthefuture.org](mailto:press@fightforthefuture.org)
-  
+
   **Other inquiries:** [team@fightforthefuture.org](mailto:team@fightforthefuture.org)
-  
+
