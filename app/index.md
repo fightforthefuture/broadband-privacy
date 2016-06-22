@@ -1,71 +1,70 @@
 ---
+title: Protect Broadband Privacy | Fight for the Future
+site_name: Fight for The Future
 sharetitle: Protect Broadband Privacy
-shareimage: https://www.savenetneutrality.eu/images/share-en.png
-description: Join us and take action! Send a message to your regulator.
+shareimage: https://www.domain.com/images/share-en.png
+description: Join us and take action! Send a message to the FCC to tell them you have a right to choose how your data is used. 
 action_comment_include: letter-en.md
-action_text: 'Submit to EU Regulators'
+action_text: Send a comment now &raquo;
+intro_headline: YOUR PERSONAL INFO. YOUR CHOICE.
+social_action_text: We have until June 27th to be heard.
 
 NOTE: DO NOT CHANGE ANY OF THESE FOLLOWING META VARIABLES!
 
 layout: default
-target_country: GB
+target_country: US
 tags:
-  - international
+  - us
   - eu
   - net-neutrality
 mothership_tag: eu-nn
-allow_comments: true
-petition_id: 'b56101a4-2ea8-426b-90e8-fda4c2b2a6f4'
-action_network_url: 'https://actionnetwork.org/petitions/save-eu-net-neutrality'
+allow_comments: true 
+petition_id: 'XX' 
+action_network_url: 'https://actionnetwork.org/petitions/XX'
 ---
 
-# We have **the willpower**, **the people** & **a real chance** _to save Net Neutrality in Europe._
+![](/images/Symbol-Stop.png)
 
-{% include countdown.html %}
+## #DataRights
 
-The Federal Communications Commission is in the midst of developing important new rules to protect broadband users’ privacy and their personal information.This summer, the EU decides on net neutrality. If we lose, European ISPs win the power to give some sites & apps special treatment—while slowing others to a crawl. On June 28, the Internet will protest with a <a href="#sites">slow loading icon</a> based on Europe's flag, to drive millions of comments to EU regulators. Can you join?
+Broadband companies like Cox and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can use your data. **Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. Demand your right to choice, transparency, and security. Will you join us?**
 
 {% include form.html
-  cta="Submit a comment to BEREC now. There's not much time."
-  disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to BEREC."
+  cta="Tell the FCC you want #DataRights over how your personal details are used!"
+  disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to the FCC."
   opt_in="Subscribe to campaign updates from Fight for the Future. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 ### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight!
 
-[Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savenetneutrality.eu){: .share}
-[Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savenetneutrality.eu){: .tweet}
-[Donate €5](https://donate.fightforthefuture.org/?tag=eu-nn){: .donate}
 
-## Learn more. Watch the video. {#video}
+WHY DOES THIS MATTER?
+=====================
 
-{% include video.html %}
+##When consumers sign up for Internet service, they shouldn’t have to sign away their right to privacy.
 
-----
+On March 31st, the FCC voted in favor of releasing a Notice of Proposed
+Rulemaking (called an “NPRM”) on “<a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a>" to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband
+providers.
 
-## Do you have a website, blog, or Tumblr? Get the protest widget for your site! {#sites}
+Shouldn't you have a say over how your personal details are used? Telephone networks have had clear, enforceable privacy rules for decades, and it's time for broadband networks to catch up.
 
-Help spread the word by running our banner widget on your site! Simply embed this one line of code on your page. You can customize look and feel, or the text, if you want. [Learn more.](https://github.com/fightforthefuture/eunetneutrality#embed-the-widget-on-your-site) `<script src="https://www.savenetneutrality.eu/widget.js"></script>`
+## We have until June 27th to be heard.
 
-: **Banner (light):**
-  <iframe frameborder="0" src="/widget/banner/index.html#demo"></iframe>
-  [Get the code!](https://github.com/fightforthefuture/eunetneutrality#banner-widget)
 
-: **Banner (dark):**
-  <iframe frameborder="0" src="/widget/banner/index.html#demo-dark"></iframe>
-  [Get the code!](https://github.com/fightforthefuture/eunetneutrality#banner-widget-dark-theme)
+_Ask your friends to join now before it's too late!_
 
-: **Modal:**
-  <iframe frameborder="0" src="/widget/modal/index.html#demo"></iframe>
-  [Get the code!](https://github.com/fightforthefuture/eunetneutrality#modal-widget)
-{: .widgets}
+[Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.domain.com){: .share}
+[Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.domain.com){: .tweet}
+
+[Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
+
+
+
 
 Built by ![](images/fftf-footer-logo.png)
-: _Help this cause:_
-  [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savenetneutrality.eu){: .share}
-  [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savenetneutrality.eu){: .tweet}
-  [Donate €5](https://donate.fightforthefuture.org/?tag=eu-nn){: .donate}
 
 : **Press:** [press@fightforthefuture.org](mailto:press@fightforthefuture.org)
-
+  
   **Other inquiries:** [team@fightforthefuture.org](mailto:team@fightforthefuture.org)
+  

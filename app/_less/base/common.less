@@ -9,13 +9,13 @@ html, body {
 
 body {
   font-size: 1.6rem;
-  font-family: @body-font;
+  font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
-  background: #01091c url(../images/background.jpg) center top no-repeat;
-  padding: 200px 15px;
   color: white;
   overflow-x: hidden;
+background-color: #10224c;
 }
+
 
 a {
   color: @link-color;
@@ -23,15 +23,18 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: @heading-font;
+  color:#dddec7;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 50px;
   line-height: 1.2em;
   text-align: center;
-  max-width: @site-max-width;
+  max-width: 830px;
   margin: 0px auto 25px auto;
   font-weight: 600;
+      text-shadow: black 2px 2px 2px;
+      padding-top: 5%;
 
   strong {
     color: @link-color;
@@ -43,18 +46,18 @@ h1 {
   }
 
   @media screen and (min-width: @small-phone) {
-    font-size: 41px;
+    font-size: 50px;
   }
 
 }
 
 h2 {
   font-weight: 600;
-  padding-top: 40px;
   font-size: 20px;
   max-width: @site-max-width;
   margin: 0px auto 30px auto;
   text-align: center;
+  text-shadow: black 2px 2px 2px;
 
   @media screen and (min-width: @small-phone) {
     font-size: 36px;
@@ -62,19 +65,27 @@ h2 {
 }
 
 p {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0px auto 25px auto;
   text-align: center;
-
+      text-shadow: black 2px 2px 2px;
+      font-size:21px;
   &:first-of-type {
     max-width: @site-max-width;
-    font-size: 18px;
+    font-size: 21px;
+    margin-bottom: 0px;
 
     @media screen and (min-width: @small-phone) {
       font-size: 21px;
     }
   }
 }
+
+
+#bg_pattern { 
+background-image: url(/images/bg_pattern.png); 
+}
+
 
 img {
   height: auto;
@@ -90,4 +101,7 @@ hr {
   max-width: 200px;
 }
 
-
+.main-content {
+background-image: url(/images/background.jpg);
+background-repeat: no-repeat;
+}

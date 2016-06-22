@@ -1,3 +1,5 @@
+
+
 .button, .share, .tweet, .donate  {
   display: inline-block;
   border-radius: 5px;
@@ -11,12 +13,17 @@
   height: 36px;
   line-height: 36px;
   margin: 5px 5px;
-
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 10px 10px 100px 10px;
+     
   &.share, &.tweet, &.donate {
     padding-left: 25px;
   }
 
-  &.tweet {
+    &.tweet {
     background: #55acee url(../images/tweet.png) 8px 10px no-repeat;
     background-size: 22px auto;
   }
@@ -29,6 +36,8 @@
   &.donate {
     background: #FC3660 url(../images/donate.png) 10px 9px no-repeat;
   }
+
+
 
   &[href="#twitter"], &[href="#sites"] {
     font-size: 17px;
@@ -52,4 +61,11 @@
     }
   }
 }
+
+.share:hover, .tweet:hover, .donate:hover {   
+box-shadow: inset 0 0 100px 100px rgba(000, 000, 000, 0.2);
+}
+
+
+
 

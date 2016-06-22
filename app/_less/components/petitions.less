@@ -1,12 +1,12 @@
 dl:first-of-type {
-  display: block;
-  margin: 0px auto 50px auto;
-  max-width: 720px;
-  background: white;
-  border-radius: 5px;
-  color: black;
-  overflow: hidden;
-  transition: opacity .4s linear;
+    display: block;
+    margin: 0px auto 100px auto;
+    max-width: 720px;
+    background: rgba(16, 34, 76, 0.92);
+    color: white;
+    overflow: hidden;
+    transition: opacity .4s linear;
+    border: 1px solid #051435;
 
   &.invisible {
     height: 0px;
@@ -32,13 +32,23 @@ dl:first-of-type {
     }
   }
   dd {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 30px 15px 30px;
 
     @media screen and (min-width: @small-phone) {
       padding: 15px 30px 15px 30px;
     }
   }
 
+#petition-form input[type="submit"]:hover {
+box-shadow: inset 0 0 100px 100px rgba(000, 000, 000, 0.2);
+}
+#petition-form input[type="submit"] {
+
+   -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
   #petition-form {
     position: relative;
 
@@ -56,21 +66,21 @@ dl:first-of-type {
       color: black;
 
 
-      &[id="form-zip_code"] {
+      &[id="select-country"] {
         display: none;
       }
 
       &[type="submit"] {
-        background: #0052F5;
-        border: 0px none;
-        color: white;
-        height: 72px;
-        line-height: 72px;
-        font-weight: bold;
-        font-size: 16px;
-        width: 100%;
-        text-transform: uppercase;
-        cursor: pointer;
+       background: #fd5b56;
+    border: 0px none;
+    color: white;
+    height: 72px;
+    line-height: 72px;
+    font-weight: bold;
+    font-size: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
         @media screen and (min-width: @small-phone) {
           font-size: 25px;
         }
@@ -94,7 +104,7 @@ dl:first-of-type {
       position: relative;
       outline: none;
       cursor: pointer;
-
+      background-color: white;
       background: url(../images/arrow.png) right center no-repeat;
       background-size: 30px 9px;
 
@@ -168,3 +178,5 @@ h3 {
     font-size: 20px;
   }
 }
+
+
