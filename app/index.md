@@ -38,17 +38,12 @@ Broadband companies like Cox and Verizon shouldn’t be able to sell details abo
 
 
 WHY DOES THIS MATTER?
-=====================
 
-##When consumers sign up for Internet service, they shouldn’t have to sign away their right to privacy.
+: ##When consumers sign up for Internet service, they shouldn’t have to sign away their right to privacy.
+  On March 31st, the FCC voted in favor of releasing a Notice of Proposed Rulemaking (called an “NPRM”) on “<a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a>" to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband providers.
 
-On March 31st, the FCC voted in favor of releasing a Notice of Proposed
-Rulemaking (called an “NPRM”) on “<a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a>" to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband
-providers.
-
-Shouldn't you have a say over how your personal details are used? Telephone networks have had clear, enforceable privacy rules for decades, and it's time for broadband networks to catch up.
-
-## We have until June 27th to be heard.
+  Shouldn't you have a say over how your personal details are used? Telephone networks have had clear, enforceable privacy rules for decades, and it's time for broadband networks to catch up.
+{: .explainer}
 
 
 _Ask your friends to join now before it's too late!_
