@@ -15,12 +15,11 @@ layout: default
 target_country: US
 tags:
   - us
-  - eu
   - net-neutrality
-mothership_tag: eu-nn
+mothership_tag: broadband-privacy
 include_comments: true
-petition_id: 'XX'
-action_network_url: 'https://actionnetwork.org/petitions/XX'
+petition_id: '05672fd5-4a7e-455d-8e6e-594fadef1599'
+action_network_url: 'https://actionnetwork.org/petitions/save-broadband-privacy'
 ---
 
 ![](/images/Symbol-Stop.png)
