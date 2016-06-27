@@ -41,7 +41,7 @@ WHY DOES THIS MATTER?
 
 ![](/images/Symbol-Error.png)
 
-: 	####DEMAND #DATARIGHTS TO PRIVACY!
+: 	####We have until July 6th.
 
 	On March 31st, the FCC voted in favor of releasing a Notice of Proposed Rulemaking (called an 'NPRM') on <a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a> to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband providers.
 {: .explainer-sub}
@@ -65,7 +65,7 @@ A RIGHT TO TRANSPARENCY
 
 Ask your friends to join now before it's too late!  
 
-: ####We have until July 6th.
+: ####DEMAND #DATARIGHTS TO PRIVACY!
   [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.domain.com){: .share}
   [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.domain.com){: .tweet}
   [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
