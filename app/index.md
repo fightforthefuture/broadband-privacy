@@ -2,7 +2,7 @@
 title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: Tell the FCC you want %23DataRights over the use of your personal details!
-shareimage: https://www.domain.com/images/share-en.png
+shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
 description: Take action before its too late! Send a message to the FCC to tell them you want the right to choose if and how your broadband provider can use or sell your data.
 action_comment_include: letter-en.md
 action_text: Send a comment now &raquo;
