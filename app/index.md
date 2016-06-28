@@ -66,8 +66,8 @@ A RIGHT TO TRANSPARENCY
 Ask your friends to join now before it's too late!  
 
 : ####DEMAND #DATARIGHTS TO PRIVACY!
-  [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.domain.com){: .share}
-  [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.domain.com){: .tweet}
+  [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share}
+  [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet}
   [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
 {: .explainer-last}
 
