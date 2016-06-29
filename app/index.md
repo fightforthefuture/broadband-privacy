@@ -1,7 +1,7 @@
 ---
 title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
-sharetitle: Tell the FCC you want %23DataRights over the use of your personal details!
+sharetitle: 'Tell the FCC you want #DataRights over the use of your personal details!'
 shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
 description: Take action before its too late! Send a message to the FCC to tell them you want the right to choose if and how your broadband provider can use or sell your data.
 action_comment_include: letter-en.md
@@ -20,7 +20,7 @@ include_comments: true
 petition_id: '05672fd5-4a7e-455d-8e6e-594fadef1599'
 action_network_url: 'https://actionnetwork.org/petitions/save-broadband-privacy'
 ---
-Broadband companies like Comcast and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can handle your data. Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. **Will you join us to demand our right to choice, transparency, and security?**
+ Broadband companies like Comcast and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can handle your data. Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. **Will you join us to demand our right to choice, transparency, and security?**
 
 {% include form.html
   cta="Tell the FCC you want #DataRights over the use of your personal details!"
@@ -76,4 +76,3 @@ Built by ![](images/fftf-footer-logo.png)
 : **Press:** [press@fightforthefuture.org](mailto:press@fightforthefuture.org)
 
   **Other inquiries:** [team@fightforthefuture.org](mailto:team@fightforthefuture.org)
-
