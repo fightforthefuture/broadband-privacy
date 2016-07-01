@@ -8,6 +8,33 @@
 
     ga('create', '{{ site.googleanalytics }}', 'auto');
     ga('send', 'pageview');
-
 </script>
+
 <script type="text/javascript" src="https://fftf.io/js/client.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!--Fixed Side Social Share -->
+<script type="text/javascript">
+function isMobile() {
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (!isMobile()) { //desktop only script:
+jQuery("#fixed-side-social-container").hide(); 
+ 	jQuery(window).scroll(function() { 
+ 	if (jQuery(window).scrollTop() > 450) { 
+ 	jQuery("#fixed-side-social-container").fadeIn(2000); } 
+ 	else { 
+ 	// hide on scroll back: jQuery("#fixed-side-social-container").fadeOut(2000); 
+ } 
+ });
+	jQuery(window).scroll(function(){
+ 	var threshold = 500; // number of pixels before bottom of page fading
+  	var op = ((jQuery(document).height() - jQuery(window).height()) - jQuery(window).scrollTop()) / threshold;
+	if( op <= 0 ){
+		jQuery("#fixed-side-social-container").hide();
+	} else {}
+});
+}
+</script>

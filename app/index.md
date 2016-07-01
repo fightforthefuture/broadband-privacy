@@ -46,21 +46,25 @@ WHY DOES THIS MATTER?
 	On March 31st, the FCC voted in favor of releasing a Notice of Proposed Rulemaking (called an 'NPRM') on <a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a> to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband providers.
 {: .explainer-sub}
 
+{% include share.html %}
 
 A RIGHT TO CHOICE   
 
 :	You should have a say in how your personal details are handled or sold. Any use of your data other than what's necessary for providing broadband service or marketing the service you've purchased would require permission - either with an explicit opt-in or in some instances, an opt-out.  
 {: .explainer-last}
 
-A RIGHT TO SECURITY
-
-: Broadband providers have a responsibility to protect your data. The proposal would require them to take reasonable steps within their organization to safeguard customer information, including adopting risk management practices and identifying a senior manager responsible for data security.   
-{: .explainer-last}
 
 A RIGHT TO TRANSPARENCY
 
 :	You deserve to know what information broadband providers collect about you, how they use it, and that it’s being handled and maintained securely. The proposal includes security breach notification requirements, including timeframes for notifying customers, the FCC, FBI, and US Secret Service.
 {: .explainer-last}
+
+
+A RIGHT TO SECURITY
+
+: Broadband providers have a responsibility to protect your data. The proposal would require them to take reasonable steps within their organization to safeguard customer information, including adopting risk management practices and identifying a senior manager responsible for data security.   
+{: .explainer-last}
+
 
 
 Ask your friends to join now before it's too late!  
