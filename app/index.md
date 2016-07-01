@@ -15,17 +15,21 @@ target_country: US
 tags:
   - us
   - net-neutrality
+additional_fields:
+  - street_address
+required_fields:
+  - street_address
+  - zip
 mothership_tag: broadband-privacy
 include_comments: true
 petition_id: '05672fd5-4a7e-455d-8e6e-594fadef1599'
 action_network_url: 'https://actionnetwork.org/petitions/save-broadband-privacy'
 ---
- Broadband companies like Comcast and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can handle your data. Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. **Will you join us to demand our right to choice, transparency, and security?**
+Broadband companies like Comcast and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can handle your data. Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. **Will you join us to demand our right to choice, transparency, and security?**
 
 {% include form.html
   cta="Tell the FCC you want #DataRights over the use of your personal details!"
-  disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to the FCC."
-  opt_in="Subscribe to campaign updates from Fight for the Future. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to the FCC and email your with campaign updates. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 ### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight!
@@ -36,7 +40,7 @@ WHY DOES THIS MATTER?
 
 : ####When consumers sign up for Internet service, they shouldn’t have to sign away their right to privacy.
 {: .explainer}
- 
+
 {% include divider.html %}
 
 ![](/images/Symbol-Error.png)
@@ -48,9 +52,9 @@ WHY DOES THIS MATTER?
 
 {% include share.html %}
 
-A RIGHT TO CHOICE   
+A RIGHT TO CHOICE
 
-:	You should have a say in how your personal details are handled or sold. Any use of your data other than what's necessary for providing broadband service or marketing the service you've purchased would require permission - either with an explicit opt-in or in some instances, an opt-out.  
+:	You should have a say in how your personal details are handled or sold. Any use of your data other than what's necessary for providing broadband service or marketing the service you've purchased would require permission - either with an explicit opt-in or in some instances, an opt-out.
 {: .explainer-last}
 
 
@@ -62,16 +66,16 @@ A RIGHT TO TRANSPARENCY
 
 A RIGHT TO SECURITY
 
-: Broadband providers have a responsibility to protect your data. The proposal would require them to take reasonable steps within their organization to safeguard customer information, including adopting risk management practices and identifying a senior manager responsible for data security.   
+: Broadband providers have a responsibility to protect your data. The proposal would require them to take reasonable steps within their organization to safeguard customer information, including adopting risk management practices and identifying a senior manager responsible for data security.
 {: .explainer-last}
 
 
 
-Ask your friends to join now before it's too late!  
+Ask your friends to join now before it's too late!
 
 : ####DEMAND #DATARIGHTS TO PRIVACY!
-  [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share}
-  [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet}
+  [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook}
+  [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
   [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
 {: .explainer-last}
 
