@@ -32,9 +32,7 @@ Broadband companies like Comcast and Verizon shouldn’t be able to sell details
   disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to the FCC and email your with campaign updates. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
-### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight!
-[Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook}
-[Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
+### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight! We don't have much time. [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook} [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
 
 
 

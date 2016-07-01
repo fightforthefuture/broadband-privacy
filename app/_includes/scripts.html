@@ -25,8 +25,7 @@ jQuery("#fixed-side-social-container").hide();
  	jQuery(window).scroll(function() { 
  	if (jQuery(window).scrollTop() > 450) { 
  	jQuery("#fixed-side-social-container").fadeIn(2000); } 
- 	else { 
- 	// hide on scroll back: jQuery("#fixed-side-social-container").fadeOut(2000); 
+ 	else { jQuery("#fixed-side-social-container").fadeOut(1000); 
  } 
  });
 	jQuery(window).scroll(function(){
