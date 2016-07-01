@@ -33,6 +33,8 @@ Broadband companies like Comcast and Verizon shouldn’t be able to sell details
 %}
 
 ### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight!
+[Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook}
+[Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
 
 
 
