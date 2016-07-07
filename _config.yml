@@ -12,7 +12,7 @@ url: https://www.savebroadbandprivacy.org/
 description: Join us and take action! Send a message to the FCC to tell them you have a right to choose how your data is used.
 timezone: America/New_York
 googleanalytics: UA-26576645-30
-petitions_api: 'httpsc://info.fightforthefuture.org'
+petitions_api: 'https://info.fightforthefuture.org'
 
 pathlead: '' # use this if you need a leading slash or directory on asset paths
 
