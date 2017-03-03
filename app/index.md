@@ -35,9 +35,7 @@ Your internet provider wants to track, package, and sell your internet self. All
   disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CPA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
-### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight! We don't have much time. [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook} [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
-
-
+{% include thankyou.html %}
 
 WHY DOES THIS MATTER?
 

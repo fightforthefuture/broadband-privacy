@@ -86,9 +86,9 @@ var gl = document.querySelectorAll('button.google');
     document.querySelector('dl:first-of-type').style.opacity = 0;
     setTimeout(function() {
       document.querySelector('dl:first-of-type').style.display = 'none';
-      document.querySelector('h3').style.display = 'block';
+      document.getElementById('confirm-modal').style.display = 'block';
       setTimeout(function() {
-        document.querySelector('h3').style.opacity = 1;
+        document.getElementById('confirm-modal').style.opacity = 1;
       }, 10);
     }, 400);
   }
