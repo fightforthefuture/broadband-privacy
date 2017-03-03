@@ -45,12 +45,6 @@ WHY DOES THIS MATTER?
 {% include divider.html %}
 
 
-{% include countdown.html
-    title="until the Congressional Review Act could expire"
-  %}
-
-
-
 {: .explainer-sub}
 
 {% include share.html %}
