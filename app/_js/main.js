@@ -38,7 +38,7 @@ var gl = document.querySelectorAll('button.google');
             googlePlus();
         }, false);
     }
-  
+
 
   var xhr = new XMLHttpRequest();
 
@@ -48,9 +48,6 @@ var gl = document.querySelectorAll('button.google');
       var response = JSON.parse(xhr.response);
       if (response.country && response.country.iso_code) {
         var country = response.country.iso_code;
-        var option = document.getElementById('select-country').querySelector('option[value="'+country+'"');
-        if (option)
-          option.selected = true;
       }
     }
   };

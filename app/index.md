@@ -13,7 +13,6 @@ NOTE: DO NOT CHANGE ANY OF THESE FOLLOWING META VARIABLES!
 layout: default
 target_country: US
 tags:
-  - us
   - net-neutrality
 additional_fields:
   - first_name
@@ -24,7 +23,6 @@ mothership_tag: delay-cra
 include_comments: true
 petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
 action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
-
 signup_button_text: "COMMIT TO CALL"
 
 ---

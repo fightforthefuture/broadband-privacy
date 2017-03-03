@@ -1,235 +1,149 @@
-window.components = window.components || {};
-window.components.petitions = function (doc, win) {
-  /**
-   * Retrieves petition data from Action Network API, then submits signature
-   * @param {object} doc - Document object
-   * @param {object} win - Window object
-   * */
+(function (doc, win) {
   "use strict";
 
   var
-    body = doc.getElementsByTagName('body')[0],
-    petitionSignatureForm = doc.getElementById('petition-form'),
-    apiHost = petitionSignatureForm.dataset.host,
-    objectIdentifier = petitionSignatureForm.dataset.petitionId,
-    submitButton = body.querySelector('[type="submit"]'),
-    countryInput = doc.getElementById('hidden-country'),
-    countrySelect = doc.getElementById('select-country'),
-    countryLabel = doc.querySelector('[for="select-country"]'),
-    queryString = win.util.parseQueryString();
+    actionNetworkForm = doc.getElementById('petition-form') || doc.createElement('div');
 
-  function numberCommafier(number) {
+  function preSubmit() {
     /**
-     * Returns a string representing a number with commas
-     * @param {int} number - the number to transform
+     * Fires up the loading modal and disables the form
+     * @return {object} - modal with spinner
      * */
 
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    /*var
+      loadingContainer = doc.createElement('div'),
+      loadingCopy = doc.createElement('h2'),
+      loadingSpinner = doc.createElement('div');
+
+    loadingSpinner.classList.add('circle-spinner', 'large');
+    loadingCopy.textContent = 'Please wait one moment…';
+
+    loadingContainer.classList.add('loading');
+    loadingContainer.appendChild(loadingCopy);
+    loadingContainer.appendChild(loadingSpinner);
+
+    win.modals.generateModal({
+      contents: loadingContainer,
+      disableOverlayClick: true
+    });*/
+    window.hideForm();
+
+    actionNetworkForm.commit.setAttribute('disabled', true);
   }
 
-  function progressBar(targetValue, targetGoal) {
+  function compilePayloadPetition() {
     /**
-     * Animates the value of a progress bar
-     * @param {int} targetValue - the target value attribute of the progress bar
-     * @param {int} targetGoal - the target max attribute of the progress bar
+     * Compiles FormData to send off to mothership queue
+     *
+     * @return {FormData} formData
      * */
 
     var
-      guardedTargetVal = targetValue.isNaN ? 0 : targetValue,
-      animate,
-      value = 0,
-      progressbar = doc.getElementById('signatures-progress-bar'),
-      max = parseInt(targetGoal),
-      step = (guardedTargetVal / 1500) * 30; // 1500 ms total, 30ms minimum
-                                             // interval
+      tags = JSON.parse(actionNetworkForm['signature[tag_list]'].value),
+      formData = new FormData();
 
-    if (!progressbar)
-      return false;
+    formData.append('guard', '');
+    formData.append('hp_enabled', true);
+    formData.append('org', 'fftf');
+    formData.append('tag', actionNetworkForm.dataset.mothershipTag);
+    formData.append('an_tags', JSON.stringify(tags));
+    formData.append('an_url', win.location.href);
+    formData.append('an_petition', actionNetworkForm.action.replace(/\/signatures\/?/, ''));
+    formData.append('member[first_name]', actionNetworkForm['signature[first_name]'].value);
+    formData.append('member[email]', actionNetworkForm['signature[email]'].value);
+    formData.append('member[postcode]', actionNetworkForm['signature[zip_code]'].value);
+    formData.append('member[country]', 'US');
 
-    function loading() {
-      value += step;
-      value = Math.ceil(value);
-      if (value >= guardedTargetVal || value >= max) {
-        value = guardedTargetVal;
-        clearInterval(animate);
-      }
-
-      var
-        commafiedNumber = numberCommafier(value);
-
-      progressbar.setAttribute('max', max.toString(10));
-      progressbar.setAttribute('value', value.toString(10));
-      progressbar.setAttribute('title', commafiedNumber + ' signatures');
-      doc.getElementById('total-sigs').textContent = commafiedNumber;
-      doc.getElementById('sigs-to-go').textContent = numberCommafier(targetGoal - value) + ' needed to reach ' + numberCommafier(targetGoal);
-      progressbar.textContent = commafiedNumber + ' signatures';
+    if (actionNetworkForm['member[phone_number]'] && actionNetworkForm['member[phone_number]'].value !== '') {
+      formData.append('member[phone_number]', actionNetworkForm['member[phone_number]'].value);
     }
 
-    animate = setInterval(function () {
-      loading();
-    }, 30);
+    return formData;
   }
 
-  function handleProgressBarError() {
-    /**
-     * Sets values for the progress bar even if there's a server or XHR error
-     * */
-    progressBar(1519, 2500);
-  }
-
-  function requestAPIInfo() {
-    /**
-     * Builds and sends request to API server
-     * */
-    var
-      apiData,
-      anRequest = new XMLHttpRequest();
-
-    anRequest.open('GET', apiHost + '/petition?identifier=' + objectIdentifier, true);
-    anRequest.addEventListener('load', function () {
-      if (anRequest.status >= 200 && anRequest.status < 400) {
-
-          apiData = JSON.parse(anRequest.responseText);
-
-        progressBar(apiData.signatures, apiData.goal);
-
-        // remove this after save-chelsea has > 1000 signatures
-        if (win.location.hostname === 'www.freechelsea.com' && apiData.signatures < 1000) {
-          doc.querySelector('.signatures').style.display = 'none';
-        }
-
-      } else {
-        handleProgressBarError();
-      }
-    });
-    anRequest.addEventListener('error', handleProgressBarError);
-    anRequest.send();
-  }
-
-  function updateZIPPlaceholder() {
-    /**
-     * Updates placeholder on ZIP/Post Code field to be appropriate for country
-     * selected
-     * */
-    var
-      ZIPLabel = doc.getElementById('form-zip_code');
-
-    if (countrySelect.value !== 'US') {
-      ZIPLabel.setAttribute('placeholder', 'Post Code');
-    } else {
-      ZIPLabel.setAttribute('placeholder', 'ZIP');
-    }
-  }
-
-  function toggleCountryField() {
-    /**
-     * Hides the label and shows the select when someone changes their signature
-     * country.
-     * */
-
-    countryInput.parentNode.removeChild(countryInput);
-    countrySelect.setAttribute('name', 'signature[country]');
-    countrySelect.classList.add('visible');
-    countryLabel.classList.add('hidden');
+  function confirmSMSSubmission() {
+    actionNetworkForm.reset();
+    doc.getElementById('form-phone_number').setAttribute('value', 'All set!');
+    doc.getElementById('form-phone_number').setAttribute('disabled', true);
+    doc.getElementById('submit-phone').setAttribute('disabled', true);
   }
 
   function submitForm(event) {
     /**
-     * Submits the form to ActionNetwork. If the script doesn’t, by now, know
-     * the action_network identifier, default isn’t prevented on the event and
-     * form submission proceeds as normal.
+     * Submits the form to ActionNetwork or Mothership-Queue
+     *
      * @param {event} event - Form submission event
      * */
 
-    if (objectIdentifier) {
-      event.preventDefault();
-    }
+    event.preventDefault();
 
     var
-      signatureSubmission = new XMLHttpRequest();
+      submission = new XMLHttpRequest();
 
-    win.callbacks.petitions.preSubmit();
-
-    function compilePayload() {
-      /**
-       * Compiles the form data into a JSON payload for Ajax submission
-       * @return {object} petitionFormData - just the info the API needs
-       * */
-      var tags = JSON.parse(doc.querySelector('[name="subscription[tag_list]"]').value);
-      if (util.getReferrerTag())
-        tags.push(util.getReferrerTag());
-
-      var formData = new FormData();
-      formData.append('guard', '');
-      formData.append('hp_enabled', true);
-      formData.append('org', window.org ? window.org : 'fftf');
-      formData.append('an_tags', JSON.stringify(tags));
-      formData.append('an_url', win.location.href);
-      formData.append('an_petition', petitionSignatureForm.action.replace('/signatures', ''));
-      formData.append('member[first_name]', doc.getElementById('form-first_name').value);
-      formData.append('member[email]', doc.getElementById('form-email').value);
-      formData.append('member[postcode]', doc.getElementById('form-zip_code').value);
-      formData.append('member[country]', countrySelect.value);
-
-      if (doc.getElementById('opt-in') && doc.getElementById('opt-in').getAttribute('type') === 'checkbox' && doc.getElementById('opt-in').checked === false) {
-        formData.append('opt_out', true);
-      }
-
-      if (doc.getElementById('form-street_address')) {
-        formData.append('member[street_address]', doc.getElementById('form-street_address').value);
-      }
-
-      if (doc.getElementById('form-phone_number')) {
-        formData.append('member[phone_number]', doc.getElementById('form-phone_number').value);
-      }
-
-      if (doc.getElementById('form-comments')) {
-        formData.append('action_comment', doc.getElementById('form-comments').value);
-      }
-
-      if (queryString.source) {
-        formData.append('subscription[source]', queryString.source);
-      }
-
-      var autoresponderHours = doc.querySelector('meta[name="autoresponder_hours"]'),
-          autoresponderActive = doc.querySelector('meta[name="autoresponder_active"]');
-      formData.append('autoresponder_hours', autoresponderHours ? autoresponderHours.content : 72);
-
-      if (autoresponderActive)
-        formData.append('autoresponder_active', 1);
-
-      var mothershipTag = document.querySelector('input[name="_mothership_tag"]');
-      if (mothershipTag && mothershipTag.value)
-        formData.append('tag', mothershipTag.value);
-      else
-        formData.append('tag', window.location.pathname);
-
-      return formData;
+    if (actionNetworkForm['signature[zip_code]'].value === '') {
+      // Since iOS Safari doesn’t do its goddamn job.
+      return;
     }
 
-    signatureSubmission.open('POST', 'https://queue.fightforthefuture.org/action', true);
-    // signatureSubmission.open('POST', 'http://localhost:9001/action', true); // JL DEBUG ~
-    signatureSubmission.addEventListener('error', win.callbacks.petitions.handleSigningError);
-    signatureSubmission.addEventListener('load',  win.callbacks.petitions.loadSignatureResponse);
-    signatureSubmission.send(compilePayload());
+    if (!actionNetworkForm['member[phone_number]'] || actionNetworkForm['member[phone_number]'].value === '') {
+      preSubmit();
+    }
 
-    if (typeof FreeProgress !== "undefined")
-      FreeProgress.convert();
+    function handleHelperError(e) {
+      /**
+       * Figures out what to say at just the right moment
+       * @param {event|XMLHttpRequest} e - Might be an event, might be a response
+       * from an XMLHttpRequest
+       * */
+
+      win.modals.dismissModal();
+
+      var
+        error = e || {},
+        errorMessageContainer = doc.createElement('div'),
+        errorMessage = doc.createElement('h2'),
+        errorMessageInfo = doc.createElement('p');
+
+      errorMessage.textContent = 'Something went wrong';
+
+      if (error.type) {
+        errorMessageInfo.textContent = 'There seems to be a problem somewhere in between your computer and our server. Might not be a bad idea to give it another try.';
+      } else if (error.status) {
+        errorMessageInfo.textContent = '(the nerdy info is that the server returned a status of "' + error.status + '" and said "' + error.statusText + '".)'
+      } else {
+        errorMessageInfo.textContent = 'this seems to be a weird error. the nerds have been alerted.';
+      }
+
+      errorMessageContainer.appendChild(errorMessage);
+      errorMessageContainer.appendChild(errorMessageInfo);
+
+      actionNetworkForm.commit.removeAttribute('disabled');
+
+      win.modals.generateModal({contents: errorMessageContainer});
+    }
+
+    function loadHelperResponse() {
+      /**
+       * Does the thing after we get a response from the API server
+       * */
+
+      if (submission.status >= 200 && submission.status < 400) {
+        if (actionNetworkForm['member[phone_number]'] && actionNetworkForm['member[phone_number]'].value !== '') {
+          confirmSMSSubmission();
+        } else {
+          console.log(submission);
+        }
+      } else {
+        handleHelperError(submission);
+      }
+    }
+
+    submission.open('POST', 'https://queue.fightforthefuture.org/action', true);
+    submission.addEventListener('error', handleHelperError);
+    submission.addEventListener('load', loadHelperResponse);
+    submission.send(compilePayloadPetition());
   }
 
-  function addEventListeners() {
-    /**
-     * Attaches all the listeners all the places
-     * */
-    countryLabel.addEventListener('click', toggleCountryField);
-    countrySelect.addEventListener('change', updateZIPPlaceholder);
-    petitionSignatureForm.addEventListener('submit', submitForm);
-  }
+  actionNetworkForm.addEventListener('submit', submitForm);
 
-  function init() {
-    requestAPIInfo();
-    addEventListeners();
-  }
-
-  init();
-};
+})(document, window);
