@@ -29,7 +29,6 @@ signup_button_text: "COMMIT TO CALL"
 Last year, the FCC passed rules to stop companies like Comcast, Verizon and AT&T from spying on your online activity to sell your information to advertisers. But now, Comcast’s friends in Congress are trying to gut these rules. **If they win, every US Internet provider will be monitoring you and selling your online habits to advertisers, without your permission. Call Congress now to stop them! Because of Congressional rules, if we can delay the vote just a few weeks, we win.**
 
 
-
 {% include form.html
   cta="I'll call Congress TODAY and tell them to #StopTheCRA"
   disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CRA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
