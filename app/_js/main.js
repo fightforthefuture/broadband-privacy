@@ -38,7 +38,7 @@ var gl = document.querySelectorAll('button.google');
             googlePlus();
         }, false);
     }
-  
+
 
   var xhr = new XMLHttpRequest();
 
@@ -48,9 +48,6 @@ var gl = document.querySelectorAll('button.google');
       var response = JSON.parse(xhr.response);
       if (response.country && response.country.iso_code) {
         var country = response.country.iso_code;
-        var option = document.getElementById('select-country').querySelector('option[value="'+country+'"');
-        if (option)
-          option.selected = true;
       }
     }
   };
@@ -89,9 +86,9 @@ var gl = document.querySelectorAll('button.google');
     document.querySelector('dl:first-of-type').style.opacity = 0;
     setTimeout(function() {
       document.querySelector('dl:first-of-type').style.display = 'none';
-      document.querySelector('h3').style.display = 'block';
+      document.getElementById('confirm-modal').style.display = 'block';
       setTimeout(function() {
-        document.querySelector('h3').style.opacity = 1;
+        document.getElementById('confirm-modal').style.opacity = 1;
       }, 10);
     }, 400);
   }
