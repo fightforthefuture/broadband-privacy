@@ -1,11 +1,11 @@
 ---
 title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
-sharetitle: 'Tell the FCC you want #DataRights over the use of your personal details!'
+sharetitle: 'Tell Congress your privacy is not for sale. #DelayTheCRA'
 shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
-description: Take action before its too late! Send a message to the FCC to tell them you want the right to choose if and how your broadband provider can use or sell your data.
+description: Take action before its too late! Otherwise, your private information will be a new product for your ISP. Irreversibly.
 action_comment_include: letter-en.md
-action_text: Send a comment now &raquo;
+action_text: COMMIT TO CALL &raquo;
 intro_headline: YOU ARE NOT A PRODUCT.
 
 NOTE: DO NOT CHANGE ANY OF THESE FOLLOWING META VARIABLES!
@@ -26,13 +26,13 @@ action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
 signup_button_text: "COMMIT TO CALL"
 
 ---
-Your internet provider wants to track, package, and sell your internet self. All your data, actions, even your SSN. Last year, the FCC passed regulations to protect your internet privacy rights. Now, some members of Congress are trying to use the Congressional Review Act (CPA) to put our personal data back on the production line. **Contact Congress now and tell them to delay the CPA before you’re boxed in for good.**
+Your internet provider wants to track, package, and sell your internet self. All your data, actions, even your SSN. Last year, the FCC passed regulations to protect your internet privacy rights. Now, some members of Congress are trying to use the Congressional Review Act (CRA) to put our personal data back on the production line. **Contact Congress now and tell them to delay the CRA before you’re boxed in for good.**
 
 
 
 {% include form.html
-  cta="I will call Congress TODAY to #DelayTheCPA because #IAmNotAProduct"
-  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CPA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  cta="I will call Congress TODAY to #DelayTheCRA because #IAmNotAProduct"
+  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CRA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 {% include thankyou.html %}
@@ -44,37 +44,39 @@ WHY DOES THIS MATTER?
 
 {% include divider.html %}
 
-![](/images/Symbol-Error.png)
 
-: 	####We have until July 6th.
+{% include countdown.html
+    title="until the Congressional Review Act could expire"
+  %}
 
-	On March 31st, the FCC voted in favor of releasing a Notice of Proposed Rulemaking (called an 'NPRM') on <a href="https://apps.fcc.gov/edocs_public/attachmatch/FCC-16-39A1.pdf">Protecting the Privacy of Customers of Broadband and Other Telecommunications Services</a> to ensure consumers have the tools they need to make informed choices about how and whether their data is used and shared by their broadband providers.
+
+
 {: .explainer-sub}
 
 {% include share.html %}
 
-A RIGHT TO CHOICE
+HOW DID THIS HAPPEN?
 
-:	You should have a say in how your personal details are handled or sold. Any use of your data other than what's necessary for providing broadband service or marketing the service you've purchased would require permission - either with an explicit opt-in or in some instances, an opt-out.
+: Last year, the FCC passed landmark regulations that strengthen online privacy rights. Now, Congress wants to undo them, using the Congressional Review Act (CRA), which allows Congress 60 days to review a new law before it goes into effect. This could allow ISPs to store and sell our every move and detail.
 {: .explainer-last}
 
 
-A RIGHT TO TRANSPARENCY
+IRREVERSIBLE MEANS IRREVERSIBLE, PERIOD
 
-:	You deserve to know what information broadband providers collect about you, how they use it, and that it’s being handled and maintained securely. The proposal includes security breach notification requirements, including timeframes for notifying customers, the FCC, FBI, and US Secret Service.
+:	The CRA not only allows Congress to overturn rules with a simple majority vote. It also **prevents the agency from issuing the same regulation in the future**. If this happens, it's the beginning of the end of digital privacy.
 {: .explainer-last}
 
 
-A RIGHT TO SECURITY
+WHAT IS AT STAKE
 
-: Broadband providers have a responsibility to protect your data. The proposal would require them to take reasonable steps within their organization to safeguard customer information, including adopting risk management practices and identifying a senior manager responsible for data security.
+:	This isn't just your browsing history or cookies. It's geolocation data, financial info, passwords, health info, even your Social Security Number. Anything you do, any data you enter, any online video you watch, any e-mail you write. Your ISP could store it all and sell it for their own profit if Congress throws out the FCC rulings.
 {: .explainer-last}
 
 
 
 Ask your friends to join now before it's too late!
 
-: ####DEMAND #DATARIGHTS TO PRIVACY!
+: ####DEMAND #DelayTheCRA FOR DIGITAL PRIVACY!
   [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook}
   [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
   [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
