@@ -1,5 +1,3 @@
-//WHY DOES THIS KEEPS OVERWRITING CHANGES?
-
 var request = require('request');
 var fs      = require('fs');
 
