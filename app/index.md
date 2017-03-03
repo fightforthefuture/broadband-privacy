@@ -3,7 +3,7 @@ title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: 'Tell Congress your privacy is not for sale. #DelayTheCRA'
 shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
-description: Take action before its too late! Your private information could become a new product for your ISP. Irreversibly.
+description: Take action before it's too late! Your private information could become a new product for your ISP. Irreversibly.
 action_comment_include: letter-en.md
 action_text: COMMIT TO CALL &raquo;
 intro_headline: YOU ARE NOT A PRODUCT.
@@ -39,7 +39,7 @@ Your internet provider wants to track, package, and sell your internet self. All
 
 WHY DOES THIS MATTER?
 
-: ####Take action before its too late! Your private information could become a new product for your internet service provider. Irreversibly.
+: ####Take action before it's too late! Your private information could become a new product for your internet service provider. Irreversibly.
 {: .explainer}
 
 {% include divider.html %}
@@ -63,7 +63,7 @@ IRREVERSIBLE MEANS IRREVERSIBLE, PERIOD
 
 WHAT IS AT STAKE
 
-:	This isn't just your browsing history or cookies. It's geolocation data, financial info, passwords, health info, even your Social Security Number. Anything you do, any data you enter, any online video you watch, any e-mail you write. Your ISP could store it all and sell it for their own profit if Congress throws out the FCC rulings.
+:	This isn't just your browsing history or cookies. It's geolocation data, financial info, passwords, health info, even your Social Security Number. Anything you do, any data you enter, any online video you watch, any email you write. Your ISP could store it all and sell it for their own profit if Congress throws out the FCC rulings.
 {: .explainer-last}
 
 
