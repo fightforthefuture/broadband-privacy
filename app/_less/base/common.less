@@ -35,7 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   color:#dddec7;
   padding: 0px 15px;
 }
-
+h1 {
+  font-family: @title-font;
+}
 @-webkit-keyframes typing {
     from { width: 100%; }
     to { width:0; }
@@ -128,7 +130,7 @@ font-size:30px;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 35px;
   padding: 0px 15px;
   font-weight: 400;
@@ -136,11 +138,11 @@ h4 {
   max-width: @site-max-width;
   margin: 20px auto 20px auto;
   text-align: center;
-  text-shadow: black 2px 2px 2px;
+  /*text-shadow: black 2px 2px 2px;*/
 
 
   @media screen and (min-width: @small-phone) {
-  font-size: 35px;
+  font-size: 23px;
 
   }
 }
@@ -149,16 +151,16 @@ p {
   max-width: 900px;
   margin: 0px auto 0px auto;
   text-align: center;
-      text-shadow: #000000 2px 2px 5px;
-      font-size:17px;
-          padding: 0 15px;
+  /*text-shadow: #000000 2px 2px 5px;*/
+  font-size: 17px;
+      padding: 0 15px;
 
   &:first-of-type {
     max-width: @site-max-width;
-    font-size: 21px;
+    font-size: 17px;
     margin-top: 20px;
 
-    @media screen and (min-width: @small-phone) {
+    @media screen and (min-width: @large-phone) {
       font-size: 21px;
     }
   }
@@ -189,4 +191,8 @@ background-image: url(/images/background.jpg);
 background-attachment: fixed;
 background-color: #10224c;
 background-size: cover;
+}
+
+b, strong {
+  font-weight: 600 !important;
 }
