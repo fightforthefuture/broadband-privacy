@@ -2,7 +2,7 @@
 title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: 'Tell Congress your privacy is not for sale. #StopTheCRA'
-shareimage: http://www.savebroadbandprivacy.org/images/share-new-en.png
+shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
 description: Broadband companies want to sell your private information without your permission. Call Congress now to stop them! #StopTheCRA
 action_comment_include: letter-en.md
 action_text: COMMIT TO CALL &raquo;
