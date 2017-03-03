@@ -6,7 +6,7 @@ shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
 description: Take action before its too late! Send a message to the FCC to tell them you want the right to choose if and how your broadband provider can use or sell your data.
 action_comment_include: letter-en.md
 action_text: Send a comment now &raquo;
-intro_headline: YOUR PERSONAL INFO. YOUR CHOICE.
+intro_headline: YOU ARE NOT A PRODUCT.
 
 NOTE: DO NOT CHANGE ANY OF THESE FOLLOWING META VARIABLES!
 
@@ -16,20 +16,25 @@ tags:
   - us
   - net-neutrality
 additional_fields:
-  - street_address
+  - first_name
 required_fields:
-  - street_address
-  - zip
-mothership_tag: broadband-privacy
+  - email
+  - zip_code
+mothership_tag: delay-cra
 include_comments: true
-petition_id: '05672fd5-4a7e-455d-8e6e-594fadef1599'
-action_network_url: 'https://actionnetwork.org/petitions/save-broadband-privacy'
+petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
+action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
+
+signup_button_text: "COMMIT TO CALL"
+
 ---
-Broadband companies like Comcast and Verizon shouldn’t be able to sell details about your private life without permission. You deserve the right to say if and how they can handle your data. Right now, the FCC is considering new rules to protect broadband users’ privacy and is taking comments from the public. Let's make sure they hear from us. **Will you join us to demand our right to choice, transparency, and security?**
+Your internet provider wants to track, package, and sell your internet self. All your data, actions, even your SSN. Last year, the FCC passed regulations to protect your internet privacy rights. Now, some members of Congress are trying to use the Congressional Review Act (CPA) to put our personal data back on the production line. **Contact Congress now and tell them to delay the CPA before you’re boxed in for good.**
+
+
 
 {% include form.html
-  cta="Tell the FCC you want #DataRights over the use of your personal details!"
-  disclosure="[Fight for the Future](https://www.fightforthefuture.org) will deliver your message to the FCC and email your with campaign updates. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  cta="I will call Congress TODAY to #DelayTheCPA because #IAmNotAProduct"
+  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CPA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 ### ![](/images/heart.png) Thanks for sending your comment. Please share this site as widely as possible to help win this fight! We don't have much time. [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook} [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
@@ -38,7 +43,7 @@ Broadband companies like Comcast and Verizon shouldn’t be able to sell details
 
 WHY DOES THIS MATTER?
 
-: ####When consumers sign up for Internet service, they shouldn’t have to sign away their right to privacy.
+: ####Unless you take action, your private information will be a new product for your ISP. Irreversibly.
 {: .explainer}
 
 {% include divider.html %}
