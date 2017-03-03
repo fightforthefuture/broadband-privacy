@@ -3,7 +3,7 @@ title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: 'Tell Congress your privacy is not for sale. #DelayTheCRA'
 shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
-description: Take action before its too late! Otherwise, your private information will be a new product for your ISP. Irreversibly.
+description: Take action before its too late! Your private information could become a new product for your ISP. Irreversibly.
 action_comment_include: letter-en.md
 action_text: COMMIT TO CALL &raquo;
 intro_headline: YOU ARE NOT A PRODUCT.
@@ -26,12 +26,12 @@ action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
 signup_button_text: "COMMIT TO CALL"
 
 ---
-Your internet provider wants to track, package, and sell your internet self. All your data, actions, even your SSN. Last year, the FCC passed regulations to protect your internet privacy rights. Now, some members of Congress are trying to use the Congressional Review Act (CRA) to put our personal data back on the production line. **Contact Congress now and tell them to delay the CRA before you’re boxed in for good.**
+Your internet provider wants to track, package, and sell your internet self. All your data, actions, even your SSN. Last year, the FCC passed regulations to protect your internet privacy rights. Now, some members of Congress are trying to use the Congressional Review Act (CRA) to put our personal data back on the production line. **Contact Congress now and tell them to delay the FCC CRA before you’re boxed in for good.**
 
 
 
 {% include form.html
-  cta="I will call Congress TODAY to #DelayTheCRA because #IAmNotAProduct"
+  cta="I will call Congress TODAY and tell them to #DelayTheCRA"
   disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to delay the CRA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
@@ -39,7 +39,7 @@ Your internet provider wants to track, package, and sell your internet self. All
 
 WHY DOES THIS MATTER?
 
-: ####Unless you take action, your private information will be a new product for your ISP. Irreversibly.
+: ####Take action before its too late! Your private information could become a new product for your internet service provider. Irreversibly.
 {: .explainer}
 
 {% include divider.html %}
@@ -70,7 +70,7 @@ WHAT IS AT STAKE
 
 Ask your friends to join now before it's too late!
 
-: ####DEMAND #DelayTheCRA FOR DIGITAL PRIVACY!
+: ####DEMAND CONGRESS #DelayTheCRA TO SAVE DIGITAL PRIVACY!
   [Share this](https://www.facebook.com/sharer/sharer.php?u=http://www.savebroadbandprivacy.org){: .share .facebook}
   [Tweet this](https://twitter.com/intent/tweet?text=http%3A%2F%2Fwww.savebroadbandprivacy.org){: .tweet .twitter}
   [Donate](https://donate.fightforthefuture.org/?tag=bp_priv){: .donate}
