@@ -5,27 +5,7 @@
     actionNetworkForm = doc.getElementById('petition-form') || doc.createElement('div');
 
   function preSubmit() {
-    /**
-     * Fires up the loading modal and disables the form
-     * @return {object} - modal with spinner
-     * */
 
-    /*var
-      loadingContainer = doc.createElement('div'),
-      loadingCopy = doc.createElement('h2'),
-      loadingSpinner = doc.createElement('div');
-
-    loadingSpinner.classList.add('circle-spinner', 'large');
-    loadingCopy.textContent = 'Please wait one moment…';
-
-    loadingContainer.classList.add('loading');
-    loadingContainer.appendChild(loadingCopy);
-    loadingContainer.appendChild(loadingSpinner);
-
-    win.modals.generateModal({
-      contents: loadingContainer,
-      disableOverlayClick: true
-    });*/
     window.hideForm();
 
     actionNetworkForm.commit.setAttribute('disabled', true);

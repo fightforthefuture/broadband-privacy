@@ -1,21 +1,73 @@
-<div class="eu-spin">
-  <img class="star star01" src="/images/star.svg">
-  <img class="star star02" src="/images/star.svg">
-  <img class="star star03" src="/images/star.svg">
-  <img class="star star04" src="/images/star.svg">
-  <img class="star star05" src="/images/star.svg">
-  <img class="star star06" src="/images/star.svg">
-  <img class="star star07" src="/images/star.svg">
-  <img class="star star08" src="/images/star.svg">
-  <img class="star star09" src="/images/star.svg">
-  <img class="star star10" src="/images/star.svg">
-  <img class="star star11" src="/images/star.svg">
-  <img class="star star12" src="/images/star.svg">
-  <div><div></div><div></div><div></div><div></div></div>
+<br>
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+  <br>
+  <h4>{{ include.title }}</h4>
 </div>
-<script type="text/javascript">
 
-  function Countdown() {
+
+
+<script type="text/javascript">
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+
+  function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+      var t = getTimeRemaining(endtime);
+
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+      if (t.total <= 0) {
+        clearInterval(timeinterval);
+      }
+    }
+
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+  }
+
+  var deadline = new Date(Date.parse('03/22/2017'));
+
+  initializeClock('clockdiv', deadline);
+
+
+  /*function Countdown() {
     this.date = new Date(Date.UTC(2016, 06, 18, 20, 00, 0)).getTime();
     this.interval = null;
     this.requestAnimationFrame = this.requestAnimationFrame.bind(this);
@@ -119,5 +171,5 @@
     h1.innerHTML = html;
   }
 
-  new Countdown();
+  new Countdown();*/
 </script>
