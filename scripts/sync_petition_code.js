@@ -1,4 +1,6 @@
-var request = require('request');
+//WHY? THIS KEEPS OVERWRITING CHANGES
+
+/*var request = require('request');
 var fs      = require('fs');
 
 var appRoot = 'app';
@@ -41,4 +43,4 @@ request(petitionUrl, function(err, httpResponse, body) {
       });
   });
 
-});
+});*/
