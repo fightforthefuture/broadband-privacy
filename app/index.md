@@ -31,7 +31,7 @@ Last year, the FCC passed rules to stop companies like Comcast, Verizon and AT&T
 
 {% include form.html
   cta="I'll call Congress TODAY and tell them to protect #BroadbandPrivacy"
-  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to stop the CRA. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 {% include thankyou.html %}
