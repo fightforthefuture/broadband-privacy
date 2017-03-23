@@ -23,7 +23,7 @@ mothership_tag: delay-cra
 include_comments: true
 petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
 action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
-signup_button_text: "COMMIT TO CALL"
+signup_button_text: "TAKE ACTION"
 
 ---
 Last year, the FCC passed rules to stop companies like Comcast, Verizon and AT&T from spying on your online activity to sell to advertisers for profit. But now, Comcast's friends in Congress are trying to gut these rules. **If they win, every US Internet service provider (ISP) will be able to spy on you and sell your online habits to advertisers, without your permission. Congress is expected to vote on this on Thursday, March 23, 2017. Call Congress now to stop them!**
