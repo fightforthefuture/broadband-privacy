@@ -3,7 +3,7 @@ title: Save Broadband Privacy | Fight for the Future
 site_name: Fight for The Future
 sharetitle: 'Tell Congress your privacy is not for sale. Protect #BroadbandPrivacy'
 shareimage: http://www.savebroadbandprivacy.org/images/share-en.png
-description: Broadband companies want to sell your private information without your permission. Call Congress now to stop them! #StopTheCRA
+description: Broadband companies want to sell your private information without your permission. Call Congress now to stop them! 
 action_comment_include: letter-en.md
 action_text: TAKE ACTION &raquo;
 intro_headline: YOUR PRIVACY MATTERS
@@ -23,14 +23,14 @@ mothership_tag: delay-cra
 include_comments: true
 petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
 action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
-signup_button_text: "TAKE ACTION"
+signup_button_text: "CALL NOW"
 
 ---
-Last year, the FCC passed rules to stop companies like Comcast, Verizon and AT&T from spying on your online activity to sell to advertisers for profit. But now, Comcast's friends in Congress are trying to gut these rules. **If they win, every US Internet service provider (ISP) will be able to spy on you and sell your online habits to advertisers, without your permission. Congress is expected to vote on this on Thursday, March 23, 2017. Call Congress now to stop them!**
+The U.S. Senate just voted to gut online privacy rules and allow Internet service providers (ISPs) like Comcast, Verizon, and AT&T to sell your sensitive personal information to advertisers without your permission. Lobbyists from the marketing and telecom industries are pushing hard on the members of Congress who they make large campaign contributions to. **But we still have a chance to stop this in the House. The vote will be soon. Contact your lawmakers now!**
 
 
 {% include form.html
-  cta="I'll call Congress TODAY and tell them to protect #BroadbandPrivacy"
+  cta="Tell lawmakers: Protect Internet privacy. Don’t vote to let ISPs sell my information to advertisers."
   disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
