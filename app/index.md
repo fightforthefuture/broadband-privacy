@@ -26,7 +26,8 @@ action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
 signup_button_text: "CALL NOW"
 
 ---
-The U.S. Senate just voted to gut online privacy rules and allow Internet service providers (ISPs) like Comcast, Verizon, and AT&T to sell your sensitive personal information to advertisers without your permission. Lobbyists from the marketing and telecom industries are pushing hard on the members of Congress who they make large campaign contributions to. **But we still have a chance to stop this in the House. The vote will be soon. Contact your lawmakers now!**
+The U.S. Senate just voted to gut online privacy rules and allow Internet service providers (ISPs) like Comcast, Verizon, and AT&T to sell your sensitive personal information to advertisers without your permission. Lobbyists from the marketing and telecom industries are pushing hard on the members of Congress who they make large campaign contributions to and the House of Representatives is expected to vote on this on Tuesday, March 28th. **We still have a chance to stop this in the House. Call Congress right now. Tell them to vote NO on repealing the FCC broadband privacy rules: (415) 360-0555**
+
 
 
 {% include form.html
