@@ -1,0 +1,126 @@
+
+<dl>
+    <dt>{{ include.cta }}</dt>
+    <dd>
+      <div id="tweet_box" style="display: block;">
+          <div id="tweet_text_container">
+            <textarea id="tweet_text" maxlength="140"></textarea>
+            <div id="remaining">0</div>
+          </div>
+          <a class="tweet_big_button" href="#"><img src="../images/tweet.png"/>{{ include.button }}</a>
+      </div>
+    </dd>
+</dl>
+
+<style type="text/css">
+  #tweet_text_container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+
+  #tweet_text_container textarea {
+    width: 100%;
+    max-width: 500px;
+    height: 112px;
+    font-family: 'Courier New';
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+    resize: none;
+  }
+
+  #tweet_text_container #remaining {
+    position: absolute;
+    right: 20px;
+    bottom: 7px;
+    font-size: 2rem;
+    color: gray;
+    opacity: .7;
+  }
+
+  #tweet_text_container #remaining.danger {
+    color: red;
+  }
+
+  a.tweet_big_button {
+    display: block;
+    margin: 10px auto 40px auto;
+    background-color: #17A1CE;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-family: @body-font, Helvetica, Verdana, sans-serif;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1bbaee+0,17a1ce+100 */
+    background: #1bbaee; /* Old browsers */
+    background: -moz-linear-gradient(top, #1bbaee 0%, #17a1ce 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1bbaee), color-stop(100%,#17a1ce)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #1bbaee 0%,#17a1ce 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1bbaee', endColorstr='#17a1ce',GradientType=0 ); /* IE6-9 */
+  }
+
+  a.tweet_big_button img {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin: 0px 5px 3px 0px;
+  }
+
+  @media screen and (min-width: 400px) {
+    a.tweet_big_button {
+      width: 390px;
+      height: 75px;
+      line-height: 75px;
+      font-size: 23px;
+    }
+
+    a.tweet_big_button img {
+      width: 38px;
+      height: auto;
+    }
+  }
+
+  a.tweet_big_button:hover {
+      background: #17A1CE;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+      text-shadow: 0px;
+  }
+</style>
+
+<script type="text/javascript">
+    var tweet = document.getElementById('tweet_text');
+
+    tweet.addEventListener('change', handleRemainingTweetText);
+    tweet.addEventListener('keyup', handleRemainingTweetText);
+
+    var possibleTweets = {{ include.tweets }}
+    tweet.value = possibleTweets[Math.floor(Math.random() * possibleTweets.length)]
+
+    handleRemainingTweetText();
+
+    function handleRemainingTweetText() {
+      var remaining = document.getElementById('remaining');
+      var charsLeft = 140 - tweet.value.length;
+
+      remaining.textContent = charsLeft;
+      charsLeft < 11 ? remaining.classList.add('danger') : remaining.classList.remove('danger');
+    }
+
+
+    document.querySelector('a.tweet_big_button').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(tweet.value), 'Post a Tweet on Twitter', 'width=500, height=300, toolbar=no, status=no, menubar=no');
+    });
+</script>
