@@ -26,12 +26,12 @@ action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
 signup_button_text: "TAKE ACTION"
 
 ---
-Last week, the U.S. Senate voted to gut online privacy rules and allow Internet service providers (ISPs) like Comcast, Verizon, and AT&T to sell your sensitive personal information to advertisers without your permission. Now, the House of Representatives is expected to vote on this in less than 24 hours. **This is our last chance to stop this. Call Congress right now. Tell them to vote NO on repealing the FCC broadband privacy rules: (415) 360-0555**
+Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. **Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34 and don’t let ISPs sell my info to advertisers.**
 
 
 
 {% include form.html
-  cta="Tell lawmakers: Protect Internet privacy. Don’t vote to let ISPs sell my information to advertisers."
+  cta="Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34."
   disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
