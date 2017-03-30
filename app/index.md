@@ -22,17 +22,17 @@ required_fields:
 mothership_tag: delay-cra
 include_comments: true
 petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
-action_network_url: 'https://actionnetwork.org/petitions/delay-cra'
+action_network_url: 'https://actionnetwork.org/petitions/protect-internet-privacy'
 signup_button_text: "TAKE ACTION"
 
 ---
-Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. **Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34 and don’t let ISPs sell my info to advertisers.**
+Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. We still have one last chance to stop this. **Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34 and don’t let ISPs sell my info to advertisers.**
 
 
 
 {% include form.html
   cta="Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34."
-  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/delay-cra) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/protect-internet-privacy) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 {% include thankyou.html %}
