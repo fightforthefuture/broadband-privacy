@@ -26,7 +26,7 @@ action_network_url: 'https://actionnetwork.org/petitions/protect-internet-privac
 signup_button_text: "TAKE ACTION"
 
 ---
-Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. We still have one last chance to stop this. **Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34 and don’t let ISPs sell my info to advertisers.**
+Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. We still have one last chance to stop this.
 
 
 
