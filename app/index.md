@@ -83,3 +83,6 @@ Built by ![](images/fftf-footer-logo.png)
 : **Press:** [press@fightforthefuture.org](mailto:press@fightforthefuture.org)
 
   **Other inquiries:** [team@fightforthefuture.org](mailto:team@fightforthefuture.org)
+  
+  **Buy a VPN:** [privateinternetaccess](https://www.privateinternetaccess.com/pages/buy-vpn/)
+  
