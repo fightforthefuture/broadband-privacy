@@ -22,17 +22,17 @@ required_fields:
 mothership_tag: delay-cra
 include_comments: true
 petition_id: '7606d90b-e27d-4d86-8377-3ec8c4f37c6a'
-action_network_url: 'https://actionnetwork.org/petitions/protect-internet-privacy'
+action_network_url: 'https://actionnetwork.org/petitions/battle-for-the-net-action'
 signup_button_text: "TAKE ACTION"
 
 ---
-Congress just voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. It was a really close vote in the House and Senate, thanks to all the public backlash, but now this bill goes to the President's desk where he is expected to sign the bill into law. We still have one last chance to stop this.
+In 2017, Congress voted to repeal Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. President Donald Trump signed the measure into law in April of 2017. Now, the current administration wants to give these same companies even more power. The Chairman of the FCC, Ajit Pai, a former Verizon lawyer, and Team Cable have a plan to kill net neutrality rules. If they get their way, these powerful ISPs will be able to slow down and censor content online and pave the Internet into “fast lanes” for those who can pay. 
 
 
 
 {% include form.html
-  cta="Tell President Trump: Protect Internet privacy. Veto S.J. Res. 34."
-  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/protect-internet-privacy) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
+  cta="Tell the FCC and Congress to reject Pai’s plan to kill net neutrality!"
+  disclosure="You are signing this [petition](https://actionnetwork.org/petitions/battle-for-the-net-action) telling Congress to protect broadband privacy. [Fight for the Future](https://www.fightforthefuture.org) will send you campaign updates. You can unsubscribe at any time. [Privacy Policy](https://www.fightforthefuture.org/privacy)"
 %}
 
 {% include thankyou.html %}
