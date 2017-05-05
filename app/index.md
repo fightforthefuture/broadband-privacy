@@ -26,7 +26,7 @@ action_network_url: 'https://actionnetwork.org/petitions/battle-for-the-net-acti
 signup_button_text: "TAKE ACTION"
 
 ---
-In 2017, Congress repealed Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. Now, the current administration wants to give these same companies even more power. The new Chairman of the FCC, Ajit Pai, a former Verizon lawyer, and Team Cable have a plan to kill net neutrality rules. If they get their way, these powerful ISPs will be able to slow down and censor content online and pave the Internet into “fast lanes” for those who can pay. 
+Congress just repealed Internet privacy rules, allowing Internet service providers like AT&T, Comcast, and Verizon to monitor, track, and sell your personal data without your permission. Now, the administration wants to give these same companies even more power. The new Chairman of the FCC, Ajit Pai, a former Verizon lawyer, is planning to kill net neutrality protections that prevent ISPs from slowing down or censoring websites. If they succeed, the Internet will never be the same.
 
 
 
